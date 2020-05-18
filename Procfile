@@ -1,0 +1,1 @@
+worker: Javascript app.js
