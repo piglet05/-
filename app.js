@@ -1,7 +1,5 @@
 //아래 코드에 성적인 단어가 포함됐을 수 있습니다.
 
-
-
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -85,5 +83,6 @@ client.on('guildMemberAdd', member => {
     channel.send('서버에 오신 것을 환영합니다, ${member}님');
   });
   
+const config = require('./config.json');
+client.login(config.token);
 
-client.login();
